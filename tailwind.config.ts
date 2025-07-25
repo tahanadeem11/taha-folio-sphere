@@ -67,11 +67,14 @@ export default {
 			backgroundImage: {
 				'hero-gradient': 'var(--hero-gradient)',
 				'card-gradient': 'var(--card-gradient)',
-				'accent-gradient': 'var(--accent-gradient)'
+				'accent-gradient': 'var(--accent-gradient)',
+				'red-gradient': 'var(--red-gradient)',
+				'blue-gradient': 'var(--blue-gradient)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
-				'glow': 'var(--shadow-glow)'
+				'glow': 'var(--shadow-glow)',
+				'blue-glow': 'var(--shadow-blue-glow)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

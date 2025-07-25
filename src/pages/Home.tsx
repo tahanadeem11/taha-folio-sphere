@@ -23,6 +23,13 @@ const Home = () => {
     "Skilled in cross-platform mobile development"
   ];
 
+  const hobbies = [
+    "Football is my biggest passion and love",
+    "Idol: Cristiano Ronaldo - the GOAT",
+    "Favorite Club: Real Madrid - Hala Madrid!",
+    "Position: Center Defence like Sergio Ramos & Roberto Carlos"
+  ];
+
   const quickStats = [
     { icon: Code, label: "Projects", value: "15+" },
     { icon: Smartphone, label: "Apps Built", value: "8+" },
@@ -114,17 +121,17 @@ const Home = () => {
             {/* Profile Image */}
             <div className="flex justify-center lg:justify-end animate-slide-in">
               <div className="relative">
-                <div className="w-80 h-80 rounded-full bg-accent-gradient p-1 shadow-glow">
-                  <div className="w-full h-full rounded-full overflow-hidden">
+                <div className="w-96 h-96 rounded-2xl bg-accent-gradient p-1 shadow-glow">
+                  <div className="w-full h-full rounded-2xl overflow-hidden">
                     <img 
                       src="/lovable-uploads/795a05d1-1ac1-4017-a120-9b6bf13cf626.png"
                       alt="Taha Nadeem - Flutter Developer"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                 </div>
                 {/* Floating Badge */}
-                <Badge className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-accent-gradient px-4 py-2 text-sm font-semibold shadow-glow">
+                <Badge className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-red-gradient px-4 py-2 text-sm font-semibold shadow-glow">
                   Available for Work
                 </Badge>
               </div>
@@ -155,13 +162,30 @@ const Home = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-3xl font-bold text-center mb-12">
-            Key <span className="bg-accent-gradient bg-clip-text text-transparent">Achievements</span>
+            Key <span className="bg-red-gradient bg-clip-text text-transparent">Achievements</span>
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {achievements.map((achievement, index) => (
-              <div key={index} className="flex items-center space-x-4 glass-card p-6 rounded-lg shadow-elegant">
-                <div className="w-2 h-2 bg-accent-gradient rounded-full"></div>
+              <div key={index} className="flex items-center space-x-4 glass-card p-6 rounded-lg shadow-elegant hover:shadow-glow transition-smooth">
+                <div className="w-2 h-2 bg-red-gradient rounded-full"></div>
                 <span className="text-lg">{achievement}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Football Passion Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-3xl font-bold text-center mb-12">
+            My <span className="bg-blue-gradient bg-clip-text text-transparent">Passion</span>
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {hobbies.map((hobby, index) => (
+              <div key={index} className="flex items-center space-x-4 glass-card p-6 rounded-lg shadow-elegant hover:shadow-blue-glow transition-smooth">
+                <div className="w-2 h-2 bg-blue-gradient rounded-full"></div>
+                <span className="text-lg">{hobby}</span>
               </div>
             ))}
           </div>
