@@ -14,6 +14,7 @@ import {
   Smartphone
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { downloadCV } from "@/lib/utils";
 
 const Home = () => {
   const achievements = [
@@ -91,7 +92,11 @@ const Home = () => {
                     View My Work
                   </Button>
                 </Link>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
+                <Button 
+                  variant="outline" 
+                  className="border-primary text-primary hover:bg-primary/10"
+                  onClick={downloadCV}
+                >
                   <Download size={18} className="mr-2" />
                   Download CV
                 </Button>

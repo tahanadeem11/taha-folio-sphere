@@ -10,6 +10,7 @@ import {
   Award,
   Download
 } from "lucide-react";
+import { downloadCV } from "@/lib/utils";
 
 const Experience = () => {
   const experiences = [
@@ -197,7 +198,10 @@ const Experience = () => {
               <p className="text-muted-foreground text-sm mb-6">
                 Download my complete CV for detailed information about my experience and skills.
               </p>
-              <Button className="w-full bg-accent-gradient hover:shadow-glow transition-smooth">
+              <Button 
+                className="w-full bg-accent-gradient hover:shadow-glow transition-smooth"
+                onClick={downloadCV}
+              >
                 <Download size={18} className="mr-2" />
                 Download CV
               </Button>
