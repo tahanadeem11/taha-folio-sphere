@@ -42,6 +42,21 @@ const Experience = () => {
         "Integrated third-party services and SDKs such as Google Maps, Payment Gateways, and social media login (Google, Facebook)"
       ],
       technologies: ["Flutter", "Dart", "Google Maps", "Payment Integration", "Multi-language", "Social Auth"]
+    },
+    {
+      company: "Top Tech Digital",
+      position: "Telemarketing Specialist",
+      duration: "2022 - June 2022",
+      location: "Lahore, Pakistan", 
+      type: "Part-time",
+      description: "Engaged in customer outreach and sales activities through strategic telemarketing campaigns while building communication and sales skills.",
+      achievements: [
+        "Successfully managed client communication and lead generation activities",
+        "Developed strong verbal communication and persuasion skills through direct customer interaction",
+        "Maintained detailed records of customer interactions and follow-up activities",
+        "Contributed to team sales targets through consistent daily call volumes"
+      ],
+      technologies: ["CRM Systems", "Sales Analytics", "Customer Communication", "Lead Management"]
     }
   ];
 
